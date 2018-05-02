@@ -2,7 +2,7 @@ var DicesBackground = {
   DiceHeight: 60,
   DiceWidth: 64,
   Dices: [],
-  DiceImage: 'images/Dice2.png',
+  DiceImage: 'images/dice.png',
   maxDices: 8,
   minScale: 0.4,
   draw: function() {
