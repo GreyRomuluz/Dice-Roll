@@ -7,19 +7,22 @@
 body{
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	padding: 0;
 	background-color: #333333;
+	margin: 0px;
+	padding: 0px;
 }
 
 /*Sets the main size for the app holder*/
 .diceAppHolder{
-	width: 1200px;
-	height: 650px;
-	border: 1px solid black;
-	margin: auto;
-	padding: 5%;
-	position: relative;
+	border: 10px solid black;
+	width: 1280px;
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+
 
 }
 canvas {
@@ -27,14 +30,13 @@ canvas {
     z-index:-1; // alternately, we can simply make this '-1' to sit behind everything...
     width: 100px; // just to make it clearly visible when it's working, very handy!
     height:100px;
-    
+
 }
 
 /*Sets the title*/
 h1 {
 	font-size: 128px;
-	margin-left: 236px;
-	margin-right: 236px;
+	text-align: center;
 }
 
 /*This holds the main button used to run the app*/
@@ -57,7 +59,6 @@ margin: inherit;
 .diceHolderDice1 {
 	display: inline-block;
 	margin-left: 50px;
-	margin-top: 15px;
 	vertical-align: top;
 }
 
@@ -65,14 +66,13 @@ margin: inherit;
 .diceHolderDice2{
 	display: inline-block;
 	margin-left: 50px;
-	margin-top: 18px;
 	vertical-align: top;
 }
 
 /*This is the span that holds the total of the two dice rolled*/
 .totalNumber{
 	font-size: 96px;
-	margin-left: 350px;
+	margin-left: 40%;
 }
 
 /*Ths following sets the size of each dice image*/
